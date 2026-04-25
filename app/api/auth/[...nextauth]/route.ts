@@ -60,12 +60,12 @@ const handler = NextAuth({
       return token
     },
 
-    async session({ session, token }) {
-      if (session.user) {
-        session.(user as any).role = token.role as string
-      }
-      return session
-    }
+    aasync session({ session, token }) {
+  if (session.user) {
+    session.user.role = token.role as string
+  }
+  return session
+}
   },
 
   pages: {
